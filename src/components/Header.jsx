@@ -20,7 +20,7 @@ function Header() {
         <Container className="d-flex justify-content-between align-items-center">
           <a href="index.html" className="p-3">
             <img
-              src="https://www.itschool.ro/img/logo-white.png"
+              src="https://itschool.ro/images/logo-itschool-dark.svg"
               alt="itschool logo"
             />
           </a>
