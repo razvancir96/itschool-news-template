@@ -1,4 +1,3 @@
-import React from "react";
 import styles from "./Page404.module.css";
 import Container from "react-bootstrap/Container";
 
