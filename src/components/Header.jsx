@@ -1,5 +1,5 @@
 import { useState } from "react";
-import styles from "./Header.module.css";
+import "./Header.css";
 import Container from "react-bootstrap/Container";
 
 function Header() {
@@ -9,14 +9,14 @@ function Header() {
     setIsDisplayed((prevIsDisplayed) => !prevIsDisplayed);
   }
 
-  let dropdownMenuClasses = styles.dropdownMenu;
+  let dropdownMenuClasses = "custom-dropdown-menu";
   if (isDisplayed) {
-    dropdownMenuClasses += ` ${styles.displayMobileMenu}`;
+    dropdownMenuClasses += " display-mobile-menu";
   }
 
   return (
-    <header>
-      <nav className={`${styles.nav} bg-primary w-100`}>
+    <header className="Header">
+      <nav className="nav bg-primary w-100">
         <Container className="d-flex justify-content-between align-items-center">
           <a href="index.html" className="p-3">
             <img
@@ -24,10 +24,10 @@ function Header() {
               alt="itschool logo"
             />
           </a>
-          <div className={styles.menuIconContainer}>
+          <div className="menu-icon-container">
             <span
               onClick={handleMenuClick}
-              className={`material-icons ${styles.menuIcon} text-light`}
+              className="material-icons menu-icon text-light"
             >
               {" "}
               menu{" "}
